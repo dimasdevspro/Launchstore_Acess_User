@@ -23,7 +23,7 @@
 
 <p>Detalhes do Projeto:</p>
 <ul>
- <li>Desenvolvimento de Cadastro de Usuários;</li>
+ <li>Desenvolvimento: Onde o usuário pode acessar?</li>
 </ul>
 
 ### Status do Projeto 
@@ -33,21 +33,23 @@
 Concluído
 </h4>
 
+
 ### Histórico do Projeto 
 [↩](#indice)
 
 <p>Evolução do projeto ao longo do Bootcamp:</p>
 <ul>
 <li><a href="https://github.com/dimasdevspro/Launchstore">Início do projeto<a></li>
+<li><a href="https://github.com/dimasdevspro/Launchstore_Cadastro_User">Cadastro de Usuário<a></li>
 </ul>
 
 ### Demonstração da Aplicação 
 [↩](#indice)
 
-<h1 align="center"><img src="screenshots/LaunchStore_Cadastro_User1.gif" height="350" weigth="350"></h1>
-<h1 align="center"><img src="screenshots/LaunchStore_Cadastro_User2.gif" height="350" weigth="350"></h1>
-<h1 align="center"><img src="screenshots/LaunchStore_Cadastro_User3.gif" height="350" weigth="350"></h1>
-
+<h1 align="center"><img src="screenshots/Launchstore_acess_user1.gif" height="350" weigth="350"></h1>
+<h1 align="center"><img src="screenshots/Launchstore_acess_user2.gif" height="350" weigth="350"></h1>
+<h1 align="center"><img src="screenshots/Launchstore_acess_user3.gif" height="350" weigth="350"></h1>
+<h1 align="center"><img src="screenshots/Launchstore_acess_user4.gif" height="350" weigth="350"></h1>
 
 
 ### Pré-requisitos 
@@ -78,10 +80,10 @@ $ https://code.visualstudio.com/
 # Acesse o terminal/cmd de sua plataforma (Win, Linux, etc)
 
 # Clone este repositório com o seguinte comando abaixo
-$ git clone https://github.com/dimasdevspro/Launchstore_Cadastro_User
+$ git clone https://github.com/dimasdevspro/Launchstore_Acess_User
 
 # Ainda no terminal, acesse a pasta com mais um comando
-$ cd Launchstore_Cadastro_User
+$ cd Launchstore_Acess_User
 
 # Agora digite este comando, para editar/testar o projeto
 $ code .
@@ -91,14 +93,14 @@ $ code .
 ### Instalação de Dependências 
 [↩](#indice)
 
-Instalação de Dependências "Express", "Nodemon", "Nunjucks", "Browsersync", "MethodOverride", "Postgresql", "Multer" para rodar aplicação.
+Instalação de Dependências "Express", "Nodemon", "Nunjucks", "Browsersync", "MethodOverride", "Postgresql", "Multer", "Bcryptjs", "Nodemailer" para rodar aplicação.
 
 ```bash
 # Abra o terminal do VSCode na Aba "Terminal"
 $ "New Terminal"
 
 # Certifique-se que o terminal está com o caminho de sua pasta, i.e
-$ /Launchstore_Cadastro_User/
+$ /Launchstore_Acess_User/
 
 # Digite o comando no terminal para instalar o Express
 $ npm install express
@@ -122,11 +124,17 @@ $ npm install browser-sync npm-run-all
     "browser-sync": "browser-sync start --proxy http://localhost:3336 --files 'public, src/app/admin, src/app/views'"
   },
 
-# Digite o comando no terminal para instalar o "Postgre"
+# Digite o comando no terminal para instalar o "pg"
 $ npm install pg
 
-# Digite o comando no terminal para instalar o "Postgre"
+# Digite o comando no terminal para instalar o "multer"
 $ npm install multer
+
+# Digite o comando no terminal para instalar o "bcryptjs"
+$ npm install bcryptjs
+
+# Digite o comando no terminal para instalar o "nodemailer"
+$ npm install nodemailer
 
 # Digite no terminal o seguinte comando para rodar o servidor
 $ npm start

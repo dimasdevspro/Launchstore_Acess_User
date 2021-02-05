@@ -15,7 +15,6 @@ function checkAllFields(body) {
          }
      }
 }
-
 async function show(req, res, next){
 
     const { userId: id } = req.session
@@ -64,7 +63,6 @@ async function post(req, res, next){
     
     next()
 }
-
 async function update(req, res, next) {
 //check if has all fields
 
@@ -91,12 +89,10 @@ if(fillAllFields){
         error: "Senha incorreta."
     })
 
-    req.user = userId
+    req.user = user
     
     next()
 
-
- 
 }
 module.exports = {
     post,

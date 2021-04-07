@@ -21,7 +21,7 @@ module.exports = {
     forgotForm(req, res){
         return res.render ("session/forgot-password")
     },
-   async forgot(req, res){
+    async forgot(req, res){
         const user = req.user
 
         try {
@@ -68,7 +68,7 @@ return res.render("session/forgot-password", {
     resetForm(req, res){
         return res.render("session/password-reset", {token: req.query.token})
     },
-   async reset(req, res){
+    async reset(req, res){
         const user = req.user
 
         const { password, token } =  req.body
